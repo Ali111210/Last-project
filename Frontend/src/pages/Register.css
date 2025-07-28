@@ -1,0 +1,122 @@
+.register-root {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  background: #fff;
+}
+
+.register-left {
+  background: #111;
+  flex: 0.9;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-width: 280px;
+  position: relative;
+  overflow: visible;
+  z-index: 3;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.worker-img {
+  width: 410px;
+  max-width: 94%;
+  margin-bottom: 55px;
+  z-index: 2;
+  display: block;
+}
+
+.worker-shadow {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 34px;
+  background: radial-gradient(ellipse at center, #222 50%, transparent 100%);
+  opacity: 0.45;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.register-right {
+  background: #fff;
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 350px;
+}
+
+.register-container {
+  width: 380px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-container h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+.register-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+  width: 100%;
+  padding: 13px 16px;
+  background: #efefef;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #222;
+  outline: none;
+}
+
+.register-container input:focus {
+  box-shadow: 0 0 0 2px #bbbbbb;
+}
+
+.register-container button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.12rem;
+  font-weight: 500;
+  margin-top: 7px;
+  cursor: pointer;
+  margin-bottom: 6px;
+  transition: background 0.19s;
+}
+
+.register-container button[type="submit"]:hover {
+  background: #353535;
+}
+
+.register-container p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.register-container .error {
+  color: #d32f2f;
+  font-size: 1rem;
+  margin: 7px 0 0 0;
+  text-align: center;
+}
